@@ -4,7 +4,12 @@ import './App.css'
 
 function App() {
   
- const [a, setA] = useState(10)
+ const [a, setA] = useState('')
+ const submithandler =()=>{
+  console.log(a);
+  setusername('')
+  
+ }
 //  const changeuser=() =>{
 //   console.log("chal gaya");
 //   setA(60)
@@ -16,9 +21,15 @@ function App() {
   return (
     
    <div>
-    <h1>Hello {a}</h1>
-    <button onClick={()=>setA(a+10)}>Increaser</button>
-    <button onClick={()=>setA(a-10)}>Decrease</button>
+  
+     <form onSubmit={(e)=>{
+      submithandler(e)
+     }}>
+      <input value={a} onChange={(e)=>{
+        setusername(e.target.value)
+      }} type="text" placeholder='Enter Your Text' />
+      <button>submit</button>
+     </form>
    </div>   
    
   )
