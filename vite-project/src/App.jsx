@@ -1,36 +1,24 @@
 
 import { useState } from 'react'
 import './App.css'
+import Header from './assets/components/Header'
 
 function App() {
-  
- const [a, setA] = useState('')
- const submithandler =()=>{
-  console.log(a);
-  setusername('')
-  
- }
-//  const changeuser=() =>{
-//   console.log("chal gaya");
-//   setA(60)
-  
-
-//  }
-  
 
   return (
     
+   <>
+   <Header/>
+   <nav >
+   <h2>Inventory</h2>
    <div>
-  
-     <form onSubmit={(e)=>{
-      submithandler(e)
-     }}>
-      <input value={a} onChange={(e)=>{
-        setusername(e.target.value)
-      }} type="text" placeholder='Enter Your Text' />
-      <button>submit</button>
-     </form>
-   </div>   
+    <h4>Home</h4>
+    <h4>About us</h4>
+    <h4>Skills</h4>
+    <h4>Contact</h4>
+   </div>
+   </nav>
+   </>
    
   )
 }
