@@ -1,0 +1,11 @@
+#hey {
+  background-color: #222;      /* Dark background */
+  color: white;                /* White text */
+  text-align: center;          /* Center the text */
+  padding: 15px 0;             /* Vertical padding */
+  font-size: 16px;             /* Font size */
+  position: fixed;             /* Fixed at bottom */
+  bottom: 0;
+  width: 100%;                 /* Full width */
+  font-family: Arial, sans-serif;
+}

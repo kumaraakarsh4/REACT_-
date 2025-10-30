@@ -6,3 +6,32 @@ button{
     background-color: blue;
     padding: 7px 11px;
 }
+nav {
+  display: flex;
+  align-items: center;  /* vertically centers items */
+  justify-content: space-between; /* spaces out heading and menu */
+  background-color: #333; /* navbar background color */
+  padding: 10px 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+nav h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav div {
+  display: flex;
+  gap: 60px; /* horizontal spacing between menu items */
+}
+
+nav div h4 {
+  margin: 6px;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+nav div h4:hover {
+  color: #ffcc00; /* highlight on hover */
+}
